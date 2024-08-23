@@ -1,6 +1,6 @@
 import math
 import time
-from rtree import RTree
+from RTree import rtree
 
 
 # This function split the dataset into 2 subspaces along either x-axis or y-axis
@@ -23,7 +23,7 @@ def divide_dataset(input_file, dimension="x"):  # Default dimension is x-axis
 # This function construct and return the R-Tree
 def constructRTree(data, B):
     # build R-Tree
-    rtree = RTree(B)
+    rtree = rtree.RTree(B)
 
     for point in data:
         rtree.insert(rtree.root, point)

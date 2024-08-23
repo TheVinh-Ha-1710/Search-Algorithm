@@ -1,6 +1,6 @@
 import math
 import time
-from rtree import RTree
+from RTree import rtree
 
 
 # Function to construct R-Tree with the dataset
@@ -12,7 +12,7 @@ def constructRTree(input_file, B):
             locations.append({"id": data[0], "x": float(data[1]), "y": float(data[2])})
 
     # build R-Tree
-    rtree = RTree(B)
+    rtree = rtree.RTree(B)
 
     for location in locations:
         rtree.insert(rtree.root, location)
