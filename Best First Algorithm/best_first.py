@@ -101,8 +101,8 @@ def main(rtree, query_file, output_file):
             )
 
 
-input_file = "shop_dataset.txt"
-query_file = "query_points.txt"
+input_file = "Datasets/shop_dataset.txt"
+query_file = "Datasets/query_points.txt"
 output_file = "best_first_output.txt"
 
 
